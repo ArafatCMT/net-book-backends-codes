@@ -79,7 +79,9 @@ class LoginView(APIView):
                 # print('get',token)
 
                 login(request, user)
-                return Response({'token': token.key, 'user_id': user.id})
+                account = Account.objects.get(user=request.user)
+                print(account.id)
+                return Response({'token': token.key, 'account_id': account.id})
             else:
                 return Response({'error': "Invalid Credential"})
         return Response(serializer.errors)
