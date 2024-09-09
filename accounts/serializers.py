@@ -44,7 +44,7 @@ class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account
         # exclude = ['user']
-        fields = ['id','user','image_url', 'phone_no', 'city', ]
+        fields = ['id','user','image_url', 'phone_no', 'city', 'description' ]
         read_only_fields = ['user',]
         # fields = '__all__'
 

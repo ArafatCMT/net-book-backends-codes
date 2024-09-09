@@ -56,7 +56,7 @@ def is_active(request, uid64, token):
         print(user)
         user.is_active = True
         user.save()
-        return redirect('https://arafatcmt.github.io/django-final-exam-frontend-codes/login.html')
+        return redirect('https://arafatcmt.github.io/net-book-frontend-2/login.html')
     return redirect('register')
 
 
