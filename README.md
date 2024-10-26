@@ -66,3 +66,4 @@ Like or Dislike Post: Allows a user to like or dislike a post.
 ###### (e.g., /comments/list/?post_id=1)
 - Edit or Delete Own Comment: A user can edit or delete their own comment.
 ##### Endpoint: /comments/detail/<comment_id>/
+###### (e.g., /comments/detail/12)
